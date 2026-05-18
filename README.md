@@ -6,9 +6,11 @@ This is a checker for [OG](https://oceangliderscommunity.github.io/OG-format-use
 
 It works with the [IOOS Compliance Checker](https://github.com/ioos/compliance-checker)
 
+You can try it out in browser with the [wasm app](https://ioos.github.io/compliance-checker-wasm-web/ioos_cc_browser.html)
+
 ## Installation
 
-### Basic installation with pop
+### Basic installation with pip
 
 ```bash
 pip install cc-checker-og
