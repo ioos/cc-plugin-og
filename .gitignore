@@ -3,7 +3,7 @@
 build
 dist
 *.egg-info
-cc_plugin_og/tests/data/*.nc
+*.nc
 
 # dotenv
 .env
