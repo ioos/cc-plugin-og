@@ -264,17 +264,13 @@ class OGChecker(OGChecker):
 
         for var_name in ds.variables:
             variable = ds.variables[var_name]
+            attrs = variable.ncattrs()
             if (
                 variable.dimensions != ("N_MEASUREMENTS",)
                 or var_name[-3:] == "_QC"
+                or "vocabulary" not in attrs
             ):
                 score += 1
-                continue
-            attrs = variable.ncattrs()
-            if "vocabulary" not in attrs:
-                messages.append(
-                    f"variable {var_name} should have attribute 'vocabulary', value is a URI from the OG1 collection",
-                )
                 continue
             uri = variable.getncattr("vocabulary")
             if "https" in uri:
