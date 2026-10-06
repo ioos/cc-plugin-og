@@ -186,7 +186,6 @@ class OGChecker(BaseNCCheck):
             "platform",
             "platform_vocabulary",
             "id",
-            "comment",
             "contributor_name",
             "contributor_email",
             "contributor_role",
