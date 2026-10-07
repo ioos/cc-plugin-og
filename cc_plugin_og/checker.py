@@ -85,7 +85,7 @@ class OGChecker(OGChecker):
         Check that all attribute names are lowercase.
         """
 
-        level = BaseCheck.HIGH
+        level = BaseCheck.MEDIUM
         score = 0
         out_of = 0
         messages = []
@@ -133,7 +133,7 @@ class OGChecker(OGChecker):
         Check that variable names are capitalized.
         """
 
-        level = BaseCheck.HIGH
+        level = BaseCheck.MEDIUM
         score = 0
         out_of = len(ds.variables)
         messages = []
